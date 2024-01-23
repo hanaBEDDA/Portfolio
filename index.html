@@ -1,0 +1,739 @@
+<!DOCTYPE HTML>
+<!--
+	Photon by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>BEDDA Hana Portfolio</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<style>
+			#header {
+				background-image: url('images/one.jpg');
+				background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+				/* Additional background-related styles if needed */
+			}
+			#header h1 {
+                font-size: 4em; /* Adjust the font size as needed */
+                font-weight: bold;
+                color: #030334; /* Adjust the text color as needed */
+            }#header P {
+                font-size: 1em; /* Adjust the font size as needed */
+                font-weight: normal;
+                color: #f2f2f6; /* Adjust the text color as needed */
+            }
+			#header .actions {
+                display: flex;
+                justify-content: space-around;
+                margin-top: 3em; /* Adjust spacing as needed */
+            }
+
+            #header .actions a {
+                text-decoration: none;
+				font-weight: bold;
+                color: #fcfafa;
+                padding: 0.5em 1em;
+                /*border: 0.5px solid #2b85ca; /* Button border color */
+                border-radius: 15px;
+                transition: background-color 1s, color 1s;
+            }
+
+            #header .actions a:hover {
+                background-color: #fff; /* Hover background color */
+                color: #000; /* Hover text color */
+            }
+			#contact {
+                text-align: center; /* Center the content */
+            }
+
+            .contact-list {
+                list-style: none;
+                padding: 0;
+                display: flex;
+                justify-content: center; /* Center the list items */
+            }
+
+            .contact-list li {
+               margin: 0 10px; /* Adjust spacing between items */
+            }
+
+            .contact-list li {
+               margin: 0 10px; /* Adjust spacing between items */
+            }
+			#portfolio .col-12 {
+            text-align: center;
+
+            }
+
+            #portfolio .actions {
+               display: flex;
+            justify-content: center;
+            margin-top: 1em; /* Adjust spacing if needed */
+            }
+
+            #portfolio .actions li {
+                 margin: 0 90px; /* Adjust spacing between buttons if needed */
+            }
+
+            #portfolio .button {
+                display: inline-block;
+                text-align: justify;
+                padding: 0px 20px; /* Adjust padding as needed */
+                text-decoration: none;
+                color: #843c3c; /* Adjust text color */
+                background-color: #f0f4f6; /* Adjust background color */
+                border-radius: 10px; /* Adjust border radius if needed */
+                transition: background-color 0.7s;
+            }
+
+            #portfolio .button:hover {
+                background-color: #7eb3d6; /* Adjust hover background color */
+            }
+
+            #experience .button {
+                display: inline-block;
+                text-align: justify;
+                padding: 0px 20px; /* Adjust padding as needed */
+                text-decoration: none;
+                color: #843c3c; /* Adjust text color */
+                background-color: #f0f4f6; /* Adjust background color */
+                border-radius: 10px; /* Adjust border radius if needed */
+                transition: background-color 0.7s;
+            }
+            #volunteer .button {
+                display: inline-block;
+                text-align: justify;
+                padding: 0px 20px; /* Adjust padding as needed */
+                text-decoration: none;
+                color: #843c3c; /* Adjust text color */
+                background-color: #f0f4f6; /* Adjust background color */
+                border-radius: 10px; /* Adjust border radius if needed */
+                transition: background-color 0.7s;
+            }
+            #volunteer .button:hover {
+                background-color: #7eb3d6; /* Adjust hover background color */
+            }
+
+            #experience .button:hover {
+                background-color: #7eb3d6; /* Adjust hover background color */
+            }
+            #project .button {
+                display: inline-block;
+                text-align: justify;
+                padding: 0px 20px; /* Adjust padding as needed */
+                text-decoration: none;
+                color: #843c3c; /* Adjust text color */
+                background-color: #f0f4f6; /* Adjust background color */
+                border-radius: 10px; /* Adjust border radius if needed */
+                transition: background-color 0.7s;
+            }
+            #project .button:hover {
+                background-color: #7eb3d6; /* Adjust hover background color */
+            }
+
+
+		    /* Add a simple movement animation */
+            @keyframes moveText {
+               0% {
+                   transform: translateY(0);
+                }
+                50% {
+                   transform: translateY(-10px);
+                }
+                100% {
+                   transform: translateY(0);
+                }
+            }
+
+            /* Apply the animation to the text */
+             #header h1 {
+              animation: moveText 2s infinite; /* Adjust the duration and iteration as needed */
+            }
+		
+
+            /* Apply the bounce animation to an element */
+             .element {
+               animation: bounce 2s infinite;
+            }
+			#contact h2{
+                font-size: 3em; /* Adjust the font size as needed */
+                font-weight: bold;
+                color: #08084e; /* Adjust the text color as needed */
+            }#contact P {
+                font-size: 1.3em; /* Adjust the font size as needed */
+                font-weight: normal;
+                color: #01010a; /* Adjust the text color as needed */
+            }
+			/* Add these styles to explicitly set the color of lines to black */
+			.contact-header .line {
+               width: 100px;
+               height: 2px;
+               background-color: black;
+               margin: 10px auto;
+            }
+			#education h2{
+                font-size: 3em; /* Adjust the font size as needed */
+                font-weight: bold;
+                color: #08084e; /* Adjust the text color as needed */
+            }
+            #education P {
+                font-size: 1.3em; /* Adjust the font size as needed */
+                font-weight: normal;
+                color: #01010a; /* Adjust the text color as needed */
+            }
+            #certificates P {
+                font-size: 1em; /* Adjust the font size as needed */
+                font-weight: normal;
+                color: #01010a; /* Adjust the text color as needed */
+            }
+			/* Centered text styling */
+			.centered {
+                text-align: center;
+            }
+
+            /* Add padding to the content for better readability */
+            .content {
+               padding: 20px;
+            }
+            #experience h3{
+                font-size: 1.5em; /* Adjust the font size as needed */
+                font-weight:  Chrome 2;
+                color: #02024f; /* Adjust the text color as needed */
+            }
+			#experience h4{
+                font-size: 3em; /* Adjust the font size as needed */
+                font-weight: bold;
+                color: #08084e; /* Adjust the text color as needed */
+            }
+            #project h4{
+                font-size: 3em; /* Adjust the font size as needed */
+                font-weight: bold;
+                color: #08084e; /* Adjust the text color as needed */
+            }
+            #certificates h4{
+                font-size: 3em; /* Adjust the font size as needed */
+                font-weight: bold;
+                color: #08084e; /* Adjust the text color as needed */
+            }
+            #experience h5{
+                font-size: 1em; /* Adjust the font size as needed */
+                font-weight: bold;
+                color: #01010a; /* Adjust the text color as needed */
+            }
+            #project h5{
+                font-size: 1em; /* Adjust the font size as needed */
+                font-weight: bold;
+                color: #01010a; /* Adjust the text color as needed */
+            }
+            #volunteer h6{
+                font-size: 1.5em; /* Adjust the font size as needed */
+                font-weight: Edge  12 ;
+                color: #08084e; /* Adjust the text color as needed */
+            }
+            #certificates h7{
+                font-size: 0.8em; /* Adjust the font size as needed */
+                font-weight: bold ;
+                color: #000008; /* Adjust the text color as needed */
+            }
+            #certificates h8{
+                font-size: 3em; /* Adjust the font size as needed */
+                font-weight: bold;
+                color: #08084e; /* Adjust the text color as needed */
+            }   
+            .project-container {
+                position: relative;
+                overflow: hidden;
+            }
+
+            .project-image {
+               display: block;
+               transition: transform 0.3s ease-in-out;
+            }
+
+            .project-container:hover .project-image {
+                transform: scale(1.1);
+            }
+            
+            
+
+		</style>
+	</head>
+	<body class="is-preload">
+	
+
+		<!-- Header -->
+			<section id="header">
+				<div class="inner">
+					<span class="icon solid major fa-desktop"></span>
+					<h1>Hi, I'm BEDDA Hana</h1>
+					
+					<p>Hana prefers to work on research projects, particularly in Statistics, Machine Learning, and Data Science.<br />
+						She advances her expertise by pursuing relevant courses, participating at conferences, and undertaking projects in these fields.</p>
+					
+					<!-- Button Section -->
+					<div class="actions">
+						<a href="https://drive.google.com/file/d/1-Me2l3rFGIv5kRnqXD8uGDff2zpJWy0R/view?usp=sharing"target="_blank">Download CV</a>
+						<a href="https://github.com/hanaBEDDA" target="_blank">View GitHub</a>
+						<a href="#portfolio">Portfolio</a>
+						<a href="https://www.linkedin.com/in/hana-bedda-9345a7234/" target="_blank">Check LinkedIn</a>
+						<a href="#contact">Contact</a>
+					</div>
+				</div>
+			</section>
+
+		<!-- portfolio -->
+		<section id="portfolio" class="main style1">
+			<div class="container">
+				
+				<!-- Buttons for Education, Experience, Projects, Certificates -->
+					<ul class="actions">
+						<li><a href="#education" class="button" >Education</a></li>
+						<li><a href="#experience" class="button">Experience</a></li>
+						<li><a href="#project" class="button">Projects</a></li>
+						<li><a href="#certificates" class="button">Certificates</a></li>
+					</ul>
+
+			</div>
+		</section>
+		         
+
+		
+
+		<!-- education -->
+        <section id="education" class=".education-header" style="background-image: url('images/download.jpg');background-size: cover; background-position: center;">
+          <div class="container">
+             <div class=".education-header">
+                 <div class="col-6 col-12-medium">
+				     <h2 class="centered" >EDUCATION</h2>
+
+                     <!-- Place your download image here or use it as a background in CSS -->
+                     <div class="download">
+                          <!-- You can add an image tag or any content you want here -->
+                           <!-- Example: <img src="path/to/download-image.jpg" alt="Download Image" /> -->
+                        </div>
+                    </div>
+                    <div class="col-6 col-12-medium">
+                      <header class="major">
+                          <p>Master's Degree in Statistics and Data Science (Sep 2021, Jul 2023)<br />
+							 University of Mustapha Ben Boulaid Batna 2-Algeria<p>
+                          <h3>Relevant Courses:</h3>
+                             *Programming (Python, R) *Machine Learning *Deep Learning *Data Mining *Bayesian Statistics<br />
+						     *Decision Information systems *Chronological Methods *Statistic Optimization.
+                             <!-- Add more relevant courses as needed -->
+                           </ul>
+						</header>
+                    </div>
+					<header class="major">
+
+						<p>Bachelor's Degree in Statistics and Data Analysis (Sep 2019, Jul 2021)<br />
+							University of Mustapha Ben Boulaid Batna 2-Algeria<p>
+					   <h3>Relevant Courses:</h3>
+					       *Probability *Numerical analysis *Algebra *Data Analysis<br />
+						   *Data Base *Inferential statistics *Random Variables *Information System.
+					    </ul>
+					</header>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- experience -->
+          <section id="experience" class="main style1 special">
+             <div class="container">
+              <header class="major">
+                 <h4 class="centered" >EXPERIENCES</h4>
+                     <h2>Work Experience</h2>
+                </header>
+                <div class="row gtr-150">
+                   <div class="col-4 col-12-medium">
+                   <span class="image fit"><img src="images/stat.jpg" alt="" /></span>
+                      <h3>State Engineer in Statistical</h3>
+                      <p>Oct 2023 - Present<br>
+                         Full-time position<br>
+                         Batna, Algeria
+                         <h5>Skills:</h5>
+                         <p>Statistical Analysis · Information Systems · Communication Skills · Problem Solving · Time Management · Continuous Learning
+                        </p>
+                   <ul class="actions special">
+                      <li><a  class="button" onclick="toggleDetails('stateEngineerDetails')">More</a></li>
+                   </ul>
+                      <p id="stateEngineerDetails" style="display: none;">
+                         Responsibilities include managing databases and information systems, overseeing network administration, leading the digitization of civil status records, supervising statistical programs, and coordinating various works as a Statistical Engineer.
+                        </p>
+                    </ul>
+                </div>
+            <script>
+                function toggleDetails(id) {
+                    var detailsElement = document.getElementById(id);
+                    if (detailsElement.style.display === 'none') {
+                        detailsElement.style.display = 'block';
+                    } else {
+                        detailsElement.style.display = 'none';
+                    }
+                }
+            </script>
+            <div class="col-4 col-12-medium">
+                <span class="image fit"><img src="images/python.jpg" alt="" /></span>
+                <h3>Data Science</h3>
+                <p>Aug 2023 - Sep 2023 Internship<br>
+                    Part-time <br>
+                    TechnoHacks EduTech
+                    <h5>Skills:</h5>
+                    <p>Data Cleaning · Problem Solving · Deep Learning · Machine Learning · Data Analysis · Statistics · Data Science · Python (Programming Language)</p>
+
+        
+                </p>
+                <ul class="actions special">
+                <li><a  class="button" onclick="toggleDetails('DataScience1Details')">More</a></li>
+                </ul>
+                    <p id="DataScience1Details" style="display: none;">
+                        During my internship at TechnoHacks EduTech in Data Science, I completed three Python projects: House Price Prediction, Social Media Sentiment Analysis, and Email Spam Filtering. These projects allowed me to apply and strengthen my data science skills. I learned to predict house prices accurately, analyze social media sentiments effectively, and develop an efficient email spam filter. This experience was invaluable for honing my practical data science knowledge and problem-solving abilities.
+                    </p>
+                </ul>
+            </div>
+            <script>
+                function toggleDetails(id) {
+                    var detailsElement = document.getElementById(id);
+                    if (detailsElement.style.display === 'none') {
+                         detailsElement.style.display = 'block';
+                        } else {
+                         detailsElement.style.display = 'none';
+                        }
+                    }
+            </script>
+
+            <div class="col-4 col-12-medium">
+               <span class="image fit"><img src="images/python.jpg" alt="" /></span>
+               <h3>Data Science</h3>
+               <p>Feb 2023- March 2023 Internship<br>
+                  Part-time <br>
+                  DAS- Directorate of Agricultural Services
+                 <h5>Skills:</h5>
+                 <p>Data Visualization · Statistical Analysis · Time Series Analysis · Machine Learning · Data Analysis · Statistics · Problem Solving · Python (Programming Language)</p>
+                </p>
+
+                <ul class="actions special">
+                <li><a  class="button" onclick="toggleDetails('DataScience2Details')">More</a></li>
+                </ul>
+                    <p id="DataScience2Details" style="display: none;">
+                        -Performed data visualization using Microsoft Power Bi.<br>    
+                        -Time series analysis of apple production in Batna city.<br>       
+                        -Using Machine Learning models for forecasting.
+                   </p>
+                </ul>
+            </div>
+           
+
+            <div class="col-4 col-12-medium">
+                <span class="image fit"><img src="images/analysis.jpg" alt="" /></span>
+                <h3>Data Analysis</h3>
+                <p>March 14, 2021-April 14, 2021 Internship<br>
+                   Full-time <br>
+                   National Unemployment Insurance Fund
+                  <h5>Skills:</h5>
+                  <p>Analytical Skills · Data Analysis · Microsoft Power BI · Statistics · Visualization</p>
+                 </p>
+ 
+                 <ul class="actions special">
+                 <li><a  class="button" onclick="toggleDetails('DataAnalysisDetails')">More</a></li>
+                 </ul>
+                     <p id="DataAnalysisDetails" style="display: none;">
+                        - Built out the data and reporting infrastructure from the ground up using Excel and Microsoft Power BI to provide real-time insights into the projects that it financed from 2004 to 2020<br>
+                        - Prepared the final report about the finance of projects in Batna City.
+                    </p>
+                 </ul>
+             </div>
+
+                
+        
+            </div>
+    
+          </section>
+          <section id="volunteer" class="main style1 special">
+            <div class="container">
+                <header class="major">
+                    <h2>Volunteer Experience</h2>
+                </header>
+                <div class="row gtr-150">
+                    <div class="col-4 col-12-medium">
+                        <h6>GDSC: Google Developers Students Club</h6>
+                        <p>University of Batna 2 (2022-2023)<br>
+                            Part-time
+                        </p>
+                        <ul class="actions special">
+                            <li><a  class="button" onclick="toggleDetails('GDSC')">More</a></li>
+                            <li><a href="https://drive.google.com/file/d/1IQYhtuEGU0DRy3QkDNfMulyXB_CfMXEa/view?usp=sharing" target="_blank" class="button">Certificate</a></li>
+                        </ul>
+                        <p id="GDSC" style="display: none;">
+                            Participated in the organization of several events as an active member, including the Hackathon in Batna.
+                        </p>
+                    </div>
+        
+                    <div class="col-4 col-12-medium">
+                        <h6>Participation in the Africa Digital Skills Conference as a Trainer </h6>
+                        <p>(Nov 2022)</p>
+                        <ul class="actions special">
+                            <li><a  class="button" onclick="toggleDetails('Africa1')">More</a></li>
+                            <li><a href="https://drive.google.com/file/d/1e9HIIGAmfWCSQh7Z4bKk_2lKdkADkrpR/view?usp=sharing" class="button">Certificate</a></li>
+                        </ul>
+                        <p id="Africa1" style="display: none;">
+                            The training session was about Data Visualization and Analysis using Microsoft Power BI. In the session, I talked about the difference between data analysis and data analytics, the steps of data analysis, and skills required for data analysts. I then delved into data visualization.
+                        </p>
+                    </div>
+        
+                    <div class="col-4 col-12-medium">
+                        <h6>Participation in the Africa Digital Skills Conference as a Trainer</h6>
+                        <p>(Nov 2023)</p>
+                        <ul class="actions special">
+                            <li><a  class="button" onclick="toggleDetails('Africa2')">More</a></li>
+                            <li><a href="https://drive.google.com/file/d/1KPPGP3RAPDnMCGGBSkpyiHUZ644l1ekI/view?usp=sharing" class="button">Certificate</a></li>
+                        </ul>
+                        <p id="Africa2" style="display: none;">
+                            This marks my second engagement as a trainer in this fantastic opportunity organized by Mobile Web Ghana. The conference aims to foster a vast community of individuals aspiring to enhance their technological skills. During my session, I covered data science, including data comprehension, preparation, modeling, and optimization, exploring dataset selection and preparation methods, and concluding with a focus on machine learning models.
+                        </p>
+                    </div>
+
+                    <div class="col-4 col-12-medium">
+                        <h6>United Nations Volunteer </h6>
+                        <p>Mapping of International Financial Instituations in Tunisia</p>
+                        <ul class="actions special">
+                            <li><a  class="button" onclick="toggleDetails('UNV1')">More</a></li>
+                            <li><a href="https://drive.google.com/file/d/1f44YGhEDvbVz3sEF2R8vTj7ehotj-dw3/view?usp=sharing" class="button">Certificate</a></li>
+                        </ul>
+                        <p id="UNV1" style="display: none;">
+                            The primary goal is to provide an updated and accurate list of relevant IFIs in Tunisia along with correct contact information.<br>
+                            Data Collection: Create a comprehensive list of key IFIs including contact details.<br>
+                            Verification: Confirm accuracy of data through cross-referencing and updates.<br>
+                            Organizational Classification: Categorize IFIs based on their focus areas for easy navigation.<br>
+                            I delivered an updated and accurate list of IFIs operating in Tunisia, including precise contact details.<br>
+                        </p>
+                    </div>
+
+                    <div class="col-4 col-12-medium">
+                        <h6>United Nations Volunteer </h6>
+                        <p>Support Resource Mobilization for Nuagck School Food Feeding Programme</p>
+                        <ul class="actions special">
+                            <li><a  class="button" onclick="toggleDetails('UNV2')">More</a></li>
+                            <li><a href="https://drive.google.com/file/d/1FcagAE9PZpDiORaL_YJQAu1Dtw8lsYi9/view?usp=sharing" class="button">Certificate</a></li>
+                        </ul>
+                        <p id="UNV2" style="display: none;">
+                            I'm thrilled to be a part of the NUAGKC Project at the Africa Child Foundation Mission of Tanzania. I volunted my time to help with:<br>
+                            1. Discuss and determine objectives,including strategy<br>
+                            2.Research and analyse information on donours<br>
+                            3.Identify cooperation and opportunities<br>
+                            4.Support draft and creation of Communication material and Correspondence.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <script>
+            function toggleDetails(id) {
+                var detailsElement = document.getElementById(id);
+                if (detailsElement.style.display === 'none') {
+                    detailsElement.style.display = 'block';
+                } else {
+                    detailsElement.style.display = 'none';
+                }
+            }
+        </script>
+
+            
+                <!-- Add more relevant courses as needed -->
+            </ul>
+            </header>
+           </div>
+          </section>
+        
+        <!-- project -->
+        <section id="project" class="main style1 special">
+           <div class="container">
+              <header class="major">
+                  <h4>PROJECTS</h4>
+              </header>
+
+        <div class="row gtr-150">
+
+            <!-- Project 1 -->
+            <div class="col-4 col-12-medium project-container">
+                <span class="image fit project-image">
+                <img src="images/power1.PNG" alt="Project 1 Image" /></span>
+                <h3>Statistical study of project financing at the National Unemployment Insurance Fund-Batna</h3>
+
+                <ul class="actions special">
+                   
+                    <li><a href="https://app.powerbi.com/reportEmbed?reportId=ec86050c-aa3c-4991-a809-df6a4268c943&autoAuth=true&ctid=ec80e7de-c600-406e-afa8-327d1f18884c" class="button" target="_blank">Microsoft Power BI</a></li>
+                </ul>
+                <p class="skills"><h5>Skills:</h5>  Data Visualization · Microsoft Power Query · Microsoft Power BI · Data Analytics</p>
+            </div>
+
+
+            <!-- Project 2 -->
+            <div class="col-4 col-12-medium project-container">
+               <span class="image fit project-image">
+               <img src="images/power2.PNG" alt="Project 2 Image" /></span>
+               <h3>A Statistical study about apple production in Batna</h3>
+
+               <ul class="actions special">
+                   
+                    <li><a href="https://app.powerbi.com/reportEmbed?reportId=e04d779e-cbef-46ed-b5ff-e6954307b932&autoAuth=true&ctid=ec80e7de-c600-406e-afa8-327d1f18884c&fbclid=IwAR2iReL40nFOy5_b5KsPvzWaQZK9j4TcJbZTBGrZpyuXK_v-y28AO1AiG0o" class="button" target="_blank">Microsoft Power BI</a></li>
+                </ul>
+                <p class="skills"><h5>Skills:</h5>  Data Visualization · Microsoft Power Query · Microsoft Power BI · Statistics · Data Analytics</p>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="col-4 col-12-medium project-container">
+                <span class="image fit project-image">
+                <img src="images/apple.PNG" alt="Project 2 Image" /></span>
+                <h3>Apple Leaf Diseases Detection</h3>
+ 
+                <ul class="actions special">
+                    
+                     <li><a href="https://github.com/hanaBEDDA/Apple-leaf-diseases-detection" class="button" target="_blank">View Project Details</a></li>
+                 </ul>
+                 <p class="skills"><h5>Skills:</h5> Deep Learning · Machine Learning · GitHub · Artificial Intelligence (AI) · Data Visualization · Data Science · Python (Programming Language)</p>
+             </div>
+
+            <!-- Project 4 -->
+            <div class="col-4 col-12-medium project-container">
+                <span class="image fit project-image">
+                <img src="images/problem.PNG" alt="Project 2 Image" />
+                </span>
+                <h3>The Invistico Airline Problem</h3>
+
+                <ul class="actions special">
+                    <li><a href="https://github.com/hanaBEDDA/The-Invistico-Airline-problem" class="button" target="_blank">View Project Details</a></li>
+                </ul>
+                <p class="skills"><h5>Skills:</h5>  Decision-Making · Decision Trees · Deep Learning · Data Visualization · Data Analysis · Data Science</p>
+            </div>
+
+            <!-- Project 5 -->
+            <div class="col-4 col-12-medium project-container">
+                <span class="image fit project-image">
+                <img src="images/social.png" alt="Project 2 Image" />
+                </span>
+                <h3>Social Media Sentiment Aanalysis</h3>
+
+                <ul class="actions special">
+                    <li><a href="https://github.com/hanaBEDDA/Internship-on-data-science-TechnoHacks-/blob/main/Social%20Media%20Sentiment%20Analysis%20project/Social%20Media%20Sentiment%20Analysis.ipynb" class="button" target="_blank">View Project Details</a></li>
+                </ul>
+                <p class="skills"><h5>Skills:</h5> Natural Language Processing (NLP) · Machine Learning · Data Analysis · Python </p>
+            </div>
+
+            <!-- Project 6 -->
+            <div class="col-4 col-12-medium project-container">
+                <span class="image fit project-image">
+                <img src="images/credit.png" alt="Project 2 Image" />
+                </span>
+                <h3>Credit Card Fraud Detection Predictive Models</h3>
+
+                <ul class="actions special">
+                    <li><a href="https://github.com/hanaBEDDA/Credit-Card-Fraud-Detection-Project/blob/main/Credit%20Card%20Fraud%20Detection.ipynb" class="button" target="_blank">View Project Details</a></li>
+                </ul>
+                <p class="skills"><h5>Skills:</h5> Natural Language Processing (NLP) · Machine Learning · Data Analysis · Python </p>
+            </div>
+
+
+            </div>
+           </div>
+        </section>
+
+
+        <!-- certificates -->
+            <section id="certificates" class="certificates-header" style="background-image: url('images/download.jpg'); background-size: cover; background-position: center;">
+                <div class="container">
+                    <header class="major">
+                        <h4 class="centered" >CERTIFICATES</h4>
+                        
+                    </header>
+                    
+                    <div class="row gtr-150">
+                        <div class="col-4 col-12-medium">
+                            <p>Understanding and Visualization using Python</p>
+                        </div>
+            
+                        <div class="col-4 col-12-medium">
+                            <p>Data and Processes in Computing</p>
+                        </div>
+            
+                        <div class="col-4 col-12-medium">
+                            <p>Deep Learning with Tensorflow</p>
+                        </div>
+            
+                        <div class="col-4 col-12-medium">
+                            <p>Google Data Analytics Certificate</p>
+                        </div>
+            
+                        <div class="col-4 col-12-medium">
+                            <p>Data Bases and SQL for Data Science with Python</p>
+                        </div>
+            
+                        <div class="col-4 col-12-medium">
+                            <p>Machine Learning Algorithms</p>
+                        </div>
+            
+                        <div class="col-4 col-12-medium">
+                            <p>Introduction to Data and Data Science</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+                        
+                        
+                
+		<!-- Four -->
+		<!---
+			/* section id="four" class="main style2 special"> */
+			/* div class="container"> */
+			/* header class="major"> */
+			/* h2>Ipsum feugiat consequat? /h2> */
+			/* /header> */
+			/* p>Sed lacus nascetur ac ante amet sapien. /p>*/
+			/* ul class="actions special"> */
+			/* li> a href="#" class="button wide primary">Sign Up /a> /li>*/ 
+			/* li> a href="#" class="button wide">Learn More /a> /li> */
+			/*/ul> */
+			/*/div>*/
+			/*/section>*/
+		-->
+
+		
+
+        <!-- contact -->
+          <section id="contact">
+             <div class="contact-header">
+                 <h2>CONTACT ME</h2>
+                 <div class="line"></div>
+                    <p>Feel free to reach out to me via any of the social media outlets below with your questions and comments!</p>
+                 
+				
+				</div>
+               <ul class="contact-list">
+                    <li><a href="https://github.com/hanaBEDDA" class="icon brands alt fa-github fa-2x" style="color: black;"><span class="label">GitHub</span></a></li>
+                    <li><a href="https://medium.com/@hanabedda2" class="icon brands alt fa-medium fa-2x" style="color: black;"><span class="label">Medium</span></a></li>
+                    <li><a href="https://www.linkedin.com/in/hana-bedda-9345a7234/" class="icon brands alt fa-linkedin fa-2x" style="color: black;"><span class="label">LinkedIn</span></a></li>
+                    <li><a href="https://www.researchgate.net/profile/Hana-Bedda" class="icon brands alt fa-researchgate fa-2x" style="color: black;"><span class="label">ResearchGate</span></a></li>
+                    <li><a href="mailto:hanabedda2@gmail.com" class="icon solid alt fa-envelope fa-2x" style="color: black;"><span class="label">Gmail</span></a></li>
+                </ul>
+            </section>
+
+
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
